@@ -13,10 +13,10 @@ public class InstertionSorting {
 			int number = a[i]; // belirtecin sagi
 			int j = i - 1; // belirtecin solu icin degisken(azalan) indis.
 				while (j >= 0 && a[j] > number) {
-					a[j + 1] = a[j];
+					a[j + 1] = a[j]; //belirtecin öncesindeki elementleri saða kaydýrma iþlemi
 					j--;
 				}
-				a[j + 1] = number;
+				a[j + 1] = number; // kucuk sayýyý artýk yerlestirme islemi
 		}
 		for (int x : a) {
 			System.out.print(x + " ");
